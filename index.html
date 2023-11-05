@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Reprise 2</title>
+    <script src="words.js"></script>
+    <link rel="stylesheet" href="words.css">
+</head>
+
+<body>
+    <table border="1" class="dataframe" id="dataframe">
+        <thead>
+            <tr style="text-align: right;">
+                <th>index</th>
+                <th>francais</th>
+                <th>deutsch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>faire les courses/les achats</td>
+                <td>Einkaufen</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>un achat</td>
+                <td>ein Einkauf/Kauf</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>acheter (j'achète-nous achetons)</td>
+                <td>kaufen</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>la vente, vendre</td>
+                <td>der Verkauf, verkaufen</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>la commande, commander</td>
+                <td>die Bestellung, bestellen</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>en ligne</td>
+                <td>online</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>la grande surface</td>
+                <td>grosser Supermarkt</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>le centre commercial</td>
+                <td>das Einkaufszentrum</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>la livraison</td>
+                <td>die Lieferung</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>livrer</td>
+                <td>liefern</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>le gaspillage</td>
+                <td>die Verschwendung</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>gaspiller</td>
+                <td>verschwenden</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>une habitude</td>
+                <td>eine Gewohnheit</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>dépenser</td>
+                <td>ausgeben</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>la dépense</td>
+                <td>die Ausgabe (Geld!)</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>la façon, la manière</td>
+                <td>die Art und Weise</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>garer la voiture</td>
+                <td>das Auto parkieren</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>le caddie, le chariot</td>
+                <td>der Einkaufswagen</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>remplir</td>
+                <td>füllen, auffüllen</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>le plus vite possible</td>
+                <td>so schnell als möglich, schnellstmöglich</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>le mieux possible</td>
+                <td>so gut als möglich, bestmöglich</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>peser (je pèse-nous pesons)</td>
+                <td>wägen, wiegen</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>le frigo, le réfrigérateur</td>
+                <td>der Kühlschrank</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>déballer qc</td>
+                <td>etw. auspacken</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>emballer qc</td>
+                <td>etw. einpacken</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>l'argent, (m.)</td>
+                <td>das Geld</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>la monnaie</td>
+                <td>das Kleingeld, „Münz“</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>faire de la monnaie</td>
+                <td>Kleingeld machen/wechseln</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>la feuille</td>
+                <td>das Blatt</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>feuilleter</td>
+                <td>blättern, durchblättern</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>le petit noir</td>
+                <td>Kaffee, schwarz</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>le rayon</td>
+                <td>die Abteilung, das Regal</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>la chaussette</td>
+                <td>die Socke</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>la chaussure</td>
+                <td>der Schuh</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>surgelé, surgelée (adj.)</td>
+                <td>tiefgefroren</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>les produits surgelés (m.pl.)</td>
+                <td>tiefgefrorene Produkte</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>dégeler</td>
+                <td>auftauen</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>la saucisse</td>
+                <td>die Wurst, das Würstchen</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>le saucisson</td>
+                <td>die (Dauer-)Wurst</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>la B.D (Bande Dessinée)</td>
+                <td>das Comic</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>une occasion</td>
+                <td>eine Gelegenheit</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>embarrasser</td>
+                <td>hinderlich sein, behindern</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>la couche</td>
+                <td>die Windel</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>lent, lente (adj.)</td>
+                <td>langsam (Adj.)</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>lentement (adv.)</td>
+                <td>langsam (Adverb)</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>parler lentement</td>
+                <td>langsam sprechen</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>s'énerver</td>
+                <td>sich aufregen, wütend werden</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>énervant, énervante (adj.)</td>
+                <td>nervig</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>poser qc</td>
+                <td>etwas hinstellen</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>poser une question</td>
+                <td>eine Frage stellen</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>une huile</td>
+                <td>ein Oel</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>le mouchoir</td>
+                <td>das Nastuch</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>le mouchoir en papier</td>
+                <td>das Papiernastuch</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>un art</td>
+                <td>eine Kunst</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>un/une artiste</td>
+                <td>ein Künstler/eine Künstlerin</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>quitter qn/qc</td>
+                <td>jem./etw. verlassen</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>quitter la maison</td>
+                <td>das Haus verlassen, aus dem Haus gehen</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>les heures de pointe</td>
+                <td>die Spitzenzeiten/ die Stosszeiten</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>la technologie de pointe</td>
+                <td>die Spitzentechnologie</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>la pointe</td>
+                <td>die Spitze, die Zacke, die Pointe</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>le hasard</td>
+                <td>der Zufall</td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td>par hasard</td>
+                <td>zufällig</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>mettre du temps</td>
+                <td>Zeit brauchen</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>mettre 30 minutes pour…</td>
+                <td>30 Minuten brauchen für…</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>en fin de compte</td>
+                <td>letztlich, schliesslich</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>compter</td>
+                <td>zählen</td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>constant, constante (adj)</td>
+                <td>konstant, ständig (Adj)</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>constamment (adv.)</td>
+                <td>ständig (Adverb)</td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>travailler constamment</td>
+                <td>ständig/ununterbrochen arbeiten</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>gêner qn/qc</td>
+                <td>jem./etw. stören, beeinträchtigen</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>l'heure (f.) de fermeture</td>
+                <td>die (Laden-)schlusszeit</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>l'heure d'ouverture</td>
+                <td>die Öffnungszeit</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>chaque fois</td>
+                <td>jedes Mal</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>une fois</td>
+                <td>einmal/ein Mal</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>rendre qc</td>
+                <td>etwas zurückgeben</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>rendre + adjectif</td>
+                <td>machen + Adjektiv</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>rendre heureux/heureuse</td>
+                <td>glücklich machen</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>efficace</td>
+                <td>effizient, wirksam</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>le pâté</td>
+                <td>die Pastete</td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>la pâte</td>
+                <td>der Teig, die Teigware (Pasta)</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>le filet de poisson</td>
+                <td>das Fischfilet</td>
+            </tr>
+            <tr>
+                <td>81</td>
+                <td>une alimentation</td>
+                <td>eine Ernährung</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>un aliment</td>
+                <td>ein Nahrungsmittel</td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>la nourriture</td>
+                <td>die Ernährung</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>se nourrir</td>
+                <td>sich ernähren</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>végétarien, ne</td>
+                <td>vegetarisch</td>
+            </tr>
+            <tr>
+                <td>86</td>
+                <td>végétalien,ne / vegan</td>
+                <td>vegan</td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>la vaisselle</td>
+                <td>das Geschirr</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>annoncer</td>
+                <td>ankündigen</td>
+            </tr>
+            <tr>
+                <td>89</td>
+                <td>une annonce</td>
+                <td>eine Anzeige, ein Inserat</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>une promotion</td>
+                <td>ein Sonderangebot</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>le solde</td>
+                <td>der Ausverkauf</td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>le commerçant,la commerçante</td>
+                <td>der Händler/die Händlerin</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>reconnaître qc/qn</td>
+                <td>etw./jem. (wieder)-erkennen</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>Qu'est-ce qu'il vous faut?</td>
+                <td>Was brauchen Sie?</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>Qu'est-ce que ce sera pour vous?</td>
+                <td>Was darf es für Sie sein?</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>Qu'est-ce que je vous sers?</td>
+                <td>Was darf ich Ihnen bringen?</td>
+            </tr>
+            <tr>
+                <td>97</td>
+                <td>Cela vous fait 12 Euros 50.</td>
+                <td>Das kostet Sie 12.50 Euro.</td>
+            </tr>
+            <tr>
+                <td>98</td>
+                <td>Ce sera tout, merci.</td>
+                <td>Das ist alles, danke.</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>le coffre</td>
+                <td>der Tresor</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>une bague</td>
+                <td>der Ring, der Fingerring</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>le couple</td>
+                <td>das (Ehe-)Paar</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>le compagnon, la compagne</td>
+                <td>der Lebensgefährte/die Lebensgefährtin</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>signer</td>
+                <td>unterschreiben</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>signer un contrat</td>
+                <td>einen Vertrag unterzeichnen</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>la signature</td>
+                <td>die Unterschrift</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>régler la facture</td>
+                <td>die Rechnung bezahlen</td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>à propos de qc</td>
+                <td>hinsichtlich etw./bezüglich</td>
+            </tr>
+            <tr>
+                <td>108</td>
+                <td>la planche</td>
+                <td>das Brett</td>
+            </tr>
+            <tr>
+                <td>109</td>
+                <td>la planche à voile</td>
+                <td>das Surfbrett</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>la planche à neige</td>
+                <td>das Snowboard</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>la peur</td>
+                <td>die Angst</td>
+            </tr>
+            <tr>
+                <td>112</td>
+                <td>avoir peur</td>
+                <td>Angst haben</td>
+            </tr>
+            <tr>
+                <td>113</td>
+                <td>une obligation</td>
+                <td>eine Verpflichtung</td>
+            </tr>
+            <tr>
+                <td>114</td>
+                <td>obligatoire</td>
+                <td>verpflichtend, obligatorisch</td>
+            </tr>
+            <tr>
+                <td>115</td>
+                <td>causer qc</td>
+                <td>etw. verursachen</td>
+            </tr>
+            <tr>
+                <td>116</td>
+                <td>la cause</td>
+                <td>die Ursache, der Grund</td>
+            </tr>
+            <tr>
+                <td>117</td>
+                <td>la cause d'accident</td>
+                <td>die Unfallursache</td>
+            </tr>
+            <tr>
+                <td>118</td>
+                <td>accomplir qc</td>
+                <td>etw. erledigen, vollbringen</td>
+            </tr>
+            <tr>
+                <td>119</td>
+                <td>retirer de l'argent</td>
+                <td>Geld abheben</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>annuler</td>
+                <td>annulieren</td>
+            </tr>
+            <tr>
+                <td>121</td>
+                <td>l'annulation, f.</td>
+                <td>die Annulation</td>
+            </tr>
+            <tr>
+                <td>122</td>
+                <td>une opération</td>
+                <td>der Vorgang, der Arbeitsgang</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>opérer</td>
+                <td>handeln, jem. operieren</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>le code secret</td>
+                <td>die Geheimzahl, der Pin</td>
+            </tr>
+            <tr>
+                <td>125</td>
+                <td>valider qc</td>
+                <td>etw. anerkennen, bestätigen, für gültig erklären</td>
+            </tr>
+            <tr>
+                <td>126</td>
+                <td>la validation</td>
+                <td>die Bestätigung</td>
+            </tr>
+            <tr>
+                <td>127</td>
+                <td>le montant</td>
+                <td>der Betrag</td>
+            </tr>
+            <tr>
+                <td>128</td>
+                <td>une instruction</td>
+                <td>eine Anweisung</td>
+            </tr>
+            <tr>
+                <td>129</td>
+                <td>instruire qn dans qc</td>
+                <td>jem. unterrichten, jem. etw. beibringen</td>
+            </tr>
+            <tr>
+                <td>130</td>
+                <td>une introduction</td>
+                <td>eine Einführung, eine Einleitung</td>
+            </tr>
+            <tr>
+                <td>131</td>
+                <td>introduire un franc</td>
+                <td>einen Franken einwerfen</td>
+            </tr>
+            <tr>
+                <td>132</td>
+                <td>le déroulement</td>
+                <td>der Vorgang, der Verlauf</td>
+            </tr>
+            <tr>
+                <td>133</td>
+                <td>le distributeur automatique</td>
+                <td>der Bankomat, der (Geld-) Automat</td>
+            </tr>
+            <tr>
+                <td>134</td>
+                <td>payer en espèces</td>
+                <td>bar bezahlen</td>
+            </tr>
+            <tr>
+                <td>135</td>
+                <td>faire le plein</td>
+                <td>(Benzin) tanken</td>
+            </tr>
+            <tr>
+                <td>136</td>
+                <td>l'essence, f.</td>
+                <td>das Benzin</td>
+            </tr>
+            <tr>
+                <td>137</td>
+                <td>le sens</td>
+                <td>der Sinn</td>
+            </tr>
+            <tr>
+                <td>138</td>
+                <td>la carte de vœux</td>
+                <td>die Glückwunschkarte</td>
+            </tr>
+            <tr>
+                <td>139</td>
+                <td>la carte d'identité</td>
+                <td>die Identitätskarte</td>
+            </tr>
+            <tr>
+                <td>140</td>
+                <td>la frontière</td>
+                <td>die (Landes-) Grenze</td>
+            </tr>
+            <tr>
+                <td>141</td>
+                <td>la limite</td>
+                <td>das Limit, die Höchstgrenze</td>
+            </tr>
+            <tr>
+                <td>142</td>
+                <td>tomber en panne</td>
+                <td>eine Panne haben, ausfallen, versagen</td>
+            </tr>
+            <tr>
+                <td>143</td>
+                <td>être hors service</td>
+                <td>ausser Betrieb sein</td>
+            </tr>
+            <tr>
+                <td>144</td>
+                <td>un ordinateur</td>
+                <td>ein Computer</td>
+            </tr>
+            <tr>
+                <td>145</td>
+                <td>un ordinateur portable/portatif</td>
+                <td>ein Laptop</td>
+            </tr>
+            <tr>
+                <td>146</td>
+                <td>léger, légère (adj.)</td>
+                <td>leicht</td>
+            </tr>
+            <tr>
+                <td>147</td>
+                <td>attentif, attentive (adj.)</td>
+                <td>aufmerksam</td>
+            </tr>
+            <tr>
+                <td>148</td>
+                <td>proche m.,f. (adj.)</td>
+                <td>nahe</td>
+            </tr>
+            <tr>
+                <td>149</td>
+                <td>nager</td>
+                <td>schwimmen</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>la qualité</td>
+                <td>die Qualität</td>
+            </tr>
+            <tr>
+                <td>151</td>
+                <td>le travail- les travaux</td>
+                <td>die Arbeit - die Arbeiten</td>
+            </tr>
+            <tr>
+                <td>152</td>
+                <td>travailler</td>
+                <td>arbeiten</td>
+            </tr>
+            <tr>
+                <td>153</td>
+                <td>travailler à plein temps</td>
+                <td>Vollzeit arbeiten</td>
+            </tr>
+            <tr>
+                <td>154</td>
+                <td>travailler à temps partiel</td>
+                <td>Teilzeit arbeiten</td>
+            </tr>
+            <tr>
+                <td>155</td>
+                <td>travailler à 80 % (pour cent)</td>
+                <td>80% arbeiten</td>
+            </tr>
+            <tr>
+                <td>156</td>
+                <td>le chômage</td>
+                <td>die Arbeitslosigkeit</td>
+            </tr>
+            <tr>
+                <td>157</td>
+                <td>tomber au chômage</td>
+                <td>arbeitslos werden</td>
+            </tr>
+            <tr>
+                <td>158</td>
+                <td>être chômeur/chômeuse</td>
+                <td>arbeitslos sein</td>
+            </tr>
+            <tr>
+                <td>159</td>
+                <td>chercher un travail</td>
+                <td>eine Arbeit suchen</td>
+            </tr>
+            <tr>
+                <td>160</td>
+                <td>chercher un poste de travail</td>
+                <td>eine Arbeitsstelle suchen</td>
+            </tr>
+            <tr>
+                <td>161</td>
+                <td>un emploi</td>
+                <td>eine Anstellung</td>
+            </tr>
+            <tr>
+                <td>162</td>
+                <td>employer qn</td>
+                <td>jem. einstellen</td>
+            </tr>
+            <tr>
+                <td>163</td>
+                <td>un employeur</td>
+                <td>ein Arbeitgeber</td>
+            </tr>
+            <tr>
+                <td>164</td>
+                <td>embaucher qn</td>
+                <td>jem. einstellen/anstellen</td>
+            </tr>
+            <tr>
+                <td>165</td>
+                <td>un entretien d'embauche</td>
+                <td>ein Vorstellungsgespräch</td>
+            </tr>
+            <tr>
+                <td>166</td>
+                <td>licencier qn</td>
+                <td>jem. entlassen</td>
+            </tr>
+            <tr>
+                <td>167</td>
+                <td>la grève</td>
+                <td>der Streik</td>
+            </tr>
+            <tr>
+                <td>168</td>
+                <td>faire grève</td>
+                <td>streiken</td>
+            </tr>
+            <tr>
+                <td>169</td>
+                <td>faire un stage</td>
+                <td>ein Praktikum machen</td>
+            </tr>
+            <tr>
+                <td>170</td>
+                <td>un travail manuel</td>
+                <td>eine Handarbeit</td>
+            </tr>
+            <tr>
+                <td>171</td>
+                <td>On travaille avec les mains</td>
+                <td>Man arbeitet mit den Händen</td>
+            </tr>
+            <tr>
+                <td>172</td>
+                <td>travailler dans un bureau</td>
+                <td>im Büro arbeiten</td>
+            </tr>
+            <tr>
+                <td>173</td>
+                <td>travailler sur le chantier</td>
+                <td>auf der Baustelle arbeiten</td>
+            </tr>
+            <tr>
+                <td>174</td>
+                <td>Il y a une bonne/mauvaise ambiance</td>
+                <td>Es ist eine gute/schlechte Stimmung</td>
+            </tr>
+            <tr>
+                <td>175</td>
+                <td>le salaire</td>
+                <td>der Lohn</td>
+            </tr>
+            <tr>
+                <td>176</td>
+                <td>gagner</td>
+                <td>verdienen, gewinnen</td>
+            </tr>
+            <tr>
+                <td>177</td>
+                <td>être en congé</td>
+                <td>im Urlaub sein</td>
+            </tr>
+            <tr>
+                <td>178</td>
+                <td>être en vacances</td>
+                <td>in den Ferien sein</td>
+            </tr>
+            <tr>
+                <td>179</td>
+                <td>un ouvrier, une ouvrière</td>
+                <td>ein Arbeiter - eine Arbeiterin</td>
+            </tr>
+            <tr>
+                <td>180</td>
+                <td>un employé, une employée</td>
+                <td>ein Angestellter - eine Angestellte</td>
+            </tr>
+            <tr>
+                <td>181</td>
+                <td>la société</td>
+                <td>die Gesellschaft</td>
+            </tr>
+            <tr>
+                <td>182</td>
+                <td>une entreprise</td>
+                <td>ein Unternehmen</td>
+            </tr>
+            <tr>
+                <td>183</td>
+                <td>une usine</td>
+                <td>eine Fabrik</td>
+            </tr>
+            <tr>
+                <td>184</td>
+                <td>un magasin</td>
+                <td>ein Laden</td>
+            </tr>
+            <tr>
+                <td>185</td>
+                <td>les affaires (f.pl.)</td>
+                <td>die Geschäfte</td>
+            </tr>
+            <tr>
+                <td>186</td>
+                <td>un outil</td>
+                <td>ein Werkzeug</td>
+            </tr>
+            <tr>
+                <td>187</td>
+                <td>réparer</td>
+                <td>reparieren, flicken</td>
+            </tr>
+            <tr>
+                <td>188</td>
+                <td>la profession</td>
+                <td>der Beruf</td>
+            </tr>
+            <tr>
+                <td>189</td>
+                <td>le métier</td>
+                <td>der Beruf, das Handwerk</td>
+            </tr>
+            <tr>
+                <td>190</td>
+                <td>le boulot</td>
+                <td>der Job, die Arbeit</td>
+            </tr>
+            <tr>
+                <td>191</td>
+                <td>être électricien</td>
+                <td>Elektriker sein</td>
+            </tr>
+            <tr>
+                <td>192</td>
+                <td>le cuisinier, la cuisinière</td>
+                <td>der Koch, die Köchin</td>
+            </tr>
+            <tr>
+                <td>193</td>
+                <td>un enseignant- une enseignante</td>
+                <td>ein Lehrer, eine Lehrerin</td>
+            </tr>
+            <tr>
+                <td>194</td>
+                <td>le facteur</td>
+                <td>der Briefträger</td>
+            </tr>
+            <tr>
+                <td>195</td>
+                <td>le maçon</td>
+                <td>der Maurer</td>
+            </tr>
+            <tr>
+                <td>196</td>
+                <td>le mécanicien</td>
+                <td>der Mechaniker</td>
+            </tr>
+            <tr>
+                <td>197</td>
+                <td>le poly-mécanicien</td>
+                <td>der Polymechaniker</td>
+            </tr>
+            <tr>
+                <td>198</td>
+                <td>le menuisier/ l'ébéniste</td>
+                <td>der Schreiner</td>
+            </tr>
+            <tr>
+                <td>199</td>
+                <td>le plombier</td>
+                <td>der Spengler/Installateur</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>le pompier</td>
+                <td>der Feuerwehrmann</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>le/la secrétaire</td>
+                <td>der Sekretär/die Sekretärin</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>l'homme (m.) au foyer</td>
+                <td>der Hausmann</td>
+            </tr>
+            <tr>
+                <td>203</td>
+                <td>la femme au foyer</td>
+                <td>die Hausfrau</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>être en retard</td>
+                <td>Verspätung haben</td>
+            </tr>
+            <tr>
+                <td>205</td>
+                <td>le corps</td>
+                <td>der Körper</td>
+            </tr>
+            <tr>
+                <td>206</td>
+                <td>la tête</td>
+                <td>der Kopf</td>
+            </tr>
+            <tr>
+                <td>207</td>
+                <td>le visage, la figure</td>
+                <td>das Gesicht</td>
+            </tr>
+            <tr>
+                <td>208</td>
+                <td>le cheveu , les cheveux</td>
+                <td>das Haar, die Haare</td>
+            </tr>
+            <tr>
+                <td>209</td>
+                <td>le nez</td>
+                <td>die Nase</td>
+            </tr>
+            <tr>
+                <td>210</td>
+                <td>l'oeil (m.), les yeux</td>
+                <td>das Auge, die Augen</td>
+            </tr>
+            <tr>
+                <td>211</td>
+                <td>l'oreille (f.)</td>
+                <td>das Ohr</td>
+            </tr>
+            <tr>
+                <td>212</td>
+                <td>la bouche</td>
+                <td>der Mund</td>
+            </tr>
+            <tr>
+                <td>213</td>
+                <td>la dent</td>
+                <td>der Zahn</td>
+            </tr>
+            <tr>
+                <td>214</td>
+                <td>la langue</td>
+                <td>die Zunge, die Sprache</td>
+            </tr>
+            <tr>
+                <td>215</td>
+                <td>le cou</td>
+                <td>der Hals</td>
+            </tr>
+            <tr>
+                <td>216</td>
+                <td>la gorge</td>
+                <td>der Hals, der Rachen</td>
+            </tr>
+            <tr>
+                <td>217</td>
+                <td>la poitrine</td>
+                <td>die Brust</td>
+            </tr>
+            <tr>
+                <td>218</td>
+                <td>le dos</td>
+                <td>der Rücken</td>
+            </tr>
+            <tr>
+                <td>219</td>
+                <td>le bras</td>
+                <td>der Arm</td>
+            </tr>
+            <tr>
+                <td>220</td>
+                <td>la main</td>
+                <td>die Hand</td>
+            </tr>
+            <tr>
+                <td>221</td>
+                <td>le doigt</td>
+                <td>der Finger</td>
+            </tr>
+            <tr>
+                <td>222</td>
+                <td>la jambe</td>
+                <td>das Bein</td>
+            </tr>
+            <tr>
+                <td>223</td>
+                <td>le pied</td>
+                <td>der Fuss</td>
+            </tr>
+            <tr>
+                <td>224</td>
+                <td>le sang</td>
+                <td>das Blut</td>
+            </tr>
+            <tr>
+                <td>225</td>
+                <td>le ventre</td>
+                <td>der bauch</td>
+            </tr>
+            <tr>
+                <td>226</td>
+                <td>l'estomac (m.)</td>
+                <td>der Magen</td>
+            </tr>
+            <tr>
+                <td>227</td>
+                <td>avoir l'air</td>
+                <td>aussehen</td>
+            </tr>
+            <tr>
+                <td>228</td>
+                <td>tu as l'air en forme</td>
+                <td>du siehst gut aus / fit aus</td>
+            </tr>
+            <tr>
+                <td>229</td>
+                <td>joli, jolie (adj.)</td>
+                <td>hübsch</td>
+            </tr>
+            <tr>
+                <td>230</td>
+                <td>moche m.,f. (adj.)</td>
+                <td>hässlich</td>
+            </tr>
+            <tr>
+                <td>231</td>
+                <td>laid, laide (adj.)</td>
+                <td>hässlich</td>
+            </tr>
+            <tr>
+                <td>232</td>
+                <td>beau,bel,beaux (m.) belle, belles (f.) (adj.)</td>
+                <td>schön</td>
+            </tr>
+            <tr>
+                <td>233</td>
+                <td>la beauté</td>
+                <td>die Schönheit</td>
+            </tr>
+            <tr>
+                <td>234</td>
+                <td>l'esprit (m.)</td>
+                <td>der Geist</td>
+            </tr>
+            <tr>
+                <td>235</td>
+                <td>penser</td>
+                <td>denken, meinen</td>
+            </tr>
+            <tr>
+                <td>236</td>
+                <td>la pensée</td>
+                <td>der Gedanken</td>
+            </tr>
+            <tr>
+                <td>237</td>
+                <td>croire</td>
+                <td>glauben</td>
+            </tr>
+            <tr>
+                <td>238</td>
+                <td>comprendre - j'ai compris</td>
+                <td>verstehen - ich habe verstanden</td>
+            </tr>
+            <tr>
+                <td>239</td>
+                <td>se souvenir de,se rappeler qc</td>
+                <td>sich erinnern an</td>
+            </tr>
+            <tr>
+                <td>240</td>
+                <td>je me souviens de Paul / je me rappelle Paul</td>
+                <td>ich erinnere mich an Paul</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
